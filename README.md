@@ -10,11 +10,7 @@ no
 IDK
 
 ## Instalation
-it is best if you use the vyond legacy offline installer. that gets rid of pain of having to wait for the files to extract and everything.
-
-## How To Contribute
-you need to be a good user, 13+ of age, a trusted person, and good at coding if you want to contribute. joshthevideomaker2022 will be a default contriubtor
-when i find some good users who is good at coding to be contributor.
+since github is yOwZa at more than 100 files. you will have to download node_modules: https://drive.google.com/file/d/1IhAj8uuLDBICNMPVl5QCl13ylWEPIFrz it is best if you use the vyond legacy offline installer. that gets rid of pain of having to wait for the files to extract and everything.
 
 ## Is Vyond Legacy Offline Also Broken Like Wrapper: Offline?
 no, because i tested it and it still works like wrapper offline should have in the first place.
