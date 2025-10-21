@@ -2,7 +2,7 @@
 :: Author: Fanimation36#1811
 :: License: MIT
 set WRAPPER_VER=1.2.9.2
-set WRAPPER_BLD=6
+set WRAPPER_BLD=7
 title Vyond Legacy Offline v%WRAPPER_VER% ^(build %WRAPPER_BLD%^) [Initializing...]
 
 ::::::::::::::::::::
@@ -72,7 +72,7 @@ if not exist "utilities\checks" md utilities\checks
 
 :: Welcome, Director Ford!
 echo Vyond Legacy Offline
-echo A project from Fanimation36 adapted by Joseph Animate 2021 
+echo A project from Fanimation36 adapted by Joseph Animate 2021 Fixed By GrapzMen GoAnimation
 echo Version !WRAPPER_VER!, build !WRAPPER_BLD!
 echo:
 
@@ -702,6 +702,7 @@ if !CEPSTRAL!==n (
 pushd utilities
 if !VERBOSEWRAPPER!==y (
 	if !DRYRUN!==n ( start /MIN open_http-server.bat )
+	if !DRYRUN!==n ( start /MIN open_http-server2.bat )
 	if !DRYRUN!==n ( start /MIN open_nodejs.bat )
 	if !DRYRUN!==n ( 
 		if !CEPSTRAL!==n ( 
@@ -758,7 +759,7 @@ cls
 
 echo:
 echo Vyond Legacy Offline v!WRAPPER_VER! ^(build !WRAPPER_BLD!^) running
-echo A project from Fanimation36 adapted by Joseph Animate 2021
+echo A project from Fanimation36 adapted by Joseph Animate 2021 fixed by GrapzMen GoAnimation
 echo:
 if !VERBOSEWRAPPER!==n ( echo DON'T CLOSE THIS WINDOW^^! Use the quit option ^(0^) when you're done. )
 if !VERBOSEWRAPPER!==y ( echo Verbose mode is on, see the two extra CMD windows for extra output. )
@@ -769,8 +770,10 @@ echo:
 echo Enter 1 to reopen the video list
 echo Enter 2 to import a file
 echo Enter 3 to open the server page
+echo Enter 4 to open the video list without the fullscreen on
+echo Enter 5 to start node js npm thing
 echo Enter ? to open the FAQ
-echo Enter clr to clean up the screen
+echo Enter clr or cls or clear to clean up the screen
 echo Enter 0 to close Wrapper: Offline
 set /a _rand=(!RANDOM!*67/32768)+1
 if !_rand!==25 echo Enter things you think'll show a secret if you're feeling adventurous
@@ -782,6 +785,8 @@ set FUCKOFF=n
 if "!choice!"=="1" goto reopen_webpage
 if "!choice!"=="2" goto start_importer
 if "!choice!"=="3" goto open_server
+if "!choice!"=="4" goto reopen_webpage_unfull
+if "!choice!"=="5" goto nodejs
 if "!choice!"=="?" goto open_faq
 if /i "!choice!"=="clr" goto wrapperstartedcls
 if /i "!choice!"=="cls" goto wrapperstartedcls
@@ -830,6 +835,48 @@ if !INCLUDEDCHROMIUM!==n (
 )
 goto wrapperidle
 
+:reopen_webpage_unfull
+if !INCLUDEDCHROMIUM!==n (
+	if !CUSTOMBROWSER!==n (
+		echo Opening Vyond Legacy Offline in your default browser...
+		start http://localhost:4343
+	) else (
+		echo Opening Vyond Legacy Offline in your set browser...
+		start !CUSTOMBROWSER! http://localhost:4343 >nul
+	)
+) else (
+	echo Opening Vyond Legacy Offline using included Chromium...
+	pushd utilities\ungoogled-chromium
+	if !APPCHROMIUM!==y (
+		start chrome.exe --allow-outdated-plugins http://localhost:4343 >nul
+	) else (
+		start chrome.exe --allow-outdated-plugins http://localhost:4343 >nul
+	)
+	popd
+)
+goto wrapperidle
+
+:open_videomaker
+if !INCLUDEDCHROMIUM!==n (
+	if !CUSTOMBROWSER!==n (
+		echo Opening Vyond Legacy Offline Videomaker in your default browser...
+		start http://localhost:4343/videomaker
+	) else (
+		echo Opening Vyond Legacy Offline Videomaker in your set browser...
+		start !CUSTOMBROWSER! http://localhost:4343/videomaker >nul
+	)
+) else (
+	echo Opening Vyond Legacy Offline using included Chromium...
+	pushd utilities\ungoogled-chromium
+	if !APPCHROMIUM!==y (
+		start chrome.exe --allow-outdated-plugins --user-data-dir=the_profile --app=http://localhost:4343/videomaker >nul
+	) else (
+		start chrome.exe --allow-outdated-plugins --user-data-dir=the_profile http://localhost:4343/videomaker >nul
+	)
+	popd
+)
+goto wrapperidle
+
 :open_server
 if !INCLUDEDCHROMIUM!==n (
 	if !CUSTOMBROWSER!==n (
@@ -869,6 +916,10 @@ goto wrapperstartedcls
 :youfuckoff
 echo You fuck off.
 set FUCKOFF=y
+goto wrapperidle
+
+:nodejs
+start utilities\open_nodejs.bat
 goto wrapperidle
 
 :open_faq
