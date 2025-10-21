@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme id="import" name="Imported Assets" cc_theme_id="import">
+<!--Sorry that there's no indenting, I couldn't get the import script to keep that.-->
+<!--Also, be sure to leave a blank line before <theme>, otherwise the import script breaks.-->
+<char id="327068788" name="the benson apparition" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
+<tags>family,every,copy,of,wrapper,offline,is,_free,software,but,is,also,_cat:personalized</tags>
+</char>
+<sound id="EvilLeafyBackgroundSound.mp3" name="EvilLeafySound" subtype="bgmusic" duration="59640" downloadtype="progressive" aid="24304" enable="Y" is_premium="N" money="0" sharing="0" />
+<background id="EvilLeafyBackground.png" name="EvilLeafyBG" default="N" aid="9603" enable="Y" is_premium="N" money="0" sharing="0" />
+<compositebg id="cbg_bedroom" name="Bedroom" enable="Y" default="Y" thumb="bedroom.png" display_order="1" is_premium="N" money="0" sharing="0" aid="9065">
+		<bg id="cbg_bedroom_BG65" index="0">
+			<file>custom.bedroom_bg.swf</file>
+		</bg>
+		<prop id="PROP124" index="3">
+			<file>custom.bedroom_blanket_bed.swf</file>
+			<x>434</x>
+			<y>251</y>
+			<xscale>1</xscale>
+			<yscale>1</yscale>
+			<face>1</face>
+			<rotation>0</rotation>
+		</prop>
+		<prop id="PROP126" index="2">
+			<file>custom.bedroom_lamp.swf</file>
+			<x>422</x>
+			<y>207</y>
+			<xscale>1</xscale>
+			<yscale>1</yscale>
+			<face>1</face>
+			<rotation>0</rotation>
+		</prop>
+		<prop id="PROP127" index="1">
+			<file>custom.bedroom_drawer02.swf</file>
+			<x>422.6</x>
+			<y>280.7</y>
+			<xscale>1</xscale>
+			<yscale>1</yscale>
+			<face>1</face>
+			<rotation>0</rotation>
+		</prop>
+	</compositebg>
+</theme>
