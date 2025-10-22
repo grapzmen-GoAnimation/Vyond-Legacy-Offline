@@ -59,7 +59,7 @@ echo Time to choose. && goto wrapperidle
 cls
 pushd "%~dp0"
 echo Pulling repository from GitHub...
-git pull
+git pull https://github.com/grapzmen-GoAnimation/Vyond-Legacy-Offline.git
 cls
 echo Vyond Legacy Offline has been updated^^!
 start "" "%~dp0"
