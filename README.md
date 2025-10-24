@@ -10,7 +10,7 @@ no
 IDK
 
 ## Instalation
-you just npm install on open_nodejs.bat if it's module not found, it installs node_modules it is best if you use the [vyond legacy offline installer](https://grapzmen-GoAnimation/Vyond-Legacy-Offline-Installer). that gets rid of pain of having to wait for the files to extract and everything.
+you just npm install on open_nodejs.bat if it's module not found, it installs node_modules it is best if you use the [vyond legacy offline installer](https://github.com/grapzmen-GoAnimation/Vyond-Legacy-Offline-Installer). that gets rid of pain of having to wait for the files to extract and everything.
 
 ## Is Vyond Legacy Offline Also Broken Like Wrapper: Offline?
 no, because i tested it and it still works like wrapper offline should have in the first place.
