@@ -10,7 +10,7 @@ no
 IDK
 
 ## Instalation
-since github is yOwZa at more than 100 files. you will have to download node_modules: https://drive.google.com/file/d/1IhAj8uuLDBICNMPVl5QCl13ylWEPIFrz it is best if you use the vyond legacy offline installer. that gets rid of pain of having to wait for the files to extract and everything.
+you just npm install on open_nodejs.bat if it's module not found, it installs node_modules it is best if you use the vyond legacy offline installer. that gets rid of pain of having to wait for the files to extract and everything.
 
 ## Is Vyond Legacy Offline Also Broken Like Wrapper: Offline?
 no, because i tested it and it still works like wrapper offline should have in the first place.
