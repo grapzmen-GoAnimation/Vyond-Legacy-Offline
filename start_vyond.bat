@@ -1,9 +1,8 @@
 :: Vyond Legacy Offline Launcher
 :: Author: Fanimation36#1811
 :: License: MIT
-set WRAPPER_VER=1.2.9.2
-set WRAPPER_BLD=7
-title Vyond Legacy Offline v%WRAPPER_VER% ^(build %WRAPPER_BLD%^) [Initializing...]
+set WRAPPER_VER=1.2.9.3
+title Vyond Legacy Offline v%WRAPPER_VER% [Initializing...]
 
 ::::::::::::::::::::
 :: Initialization ::
@@ -73,7 +72,7 @@ if not exist "utilities\checks" md utilities\checks
 :: Welcome, Director Ford!
 echo Vyond Legacy Offline
 echo A project from Fanimation36 adapted by Joseph Animate 2021 Fixed By GrapzMen GoAnimation
-echo Version !WRAPPER_VER!, build !WRAPPER_BLD!
+echo Version !WRAPPER_VER!
 echo:
 
 :: Confirm measurements to proceed.
@@ -125,10 +124,10 @@ if !INCLUDEDCHROMIUM!==y set BROWSER_TYPE=chrome
 
 :: Flash Player
 if !VERBOSEWRAPPER!==y ( echo Checking for Flash installation... )
-if exist "!windir!\SysWOW64\Macromed\Flash\*pepper.exe" set FLASH_CHROMIUM_DETECTED=y
-if exist "!windir!\System32\Macromed\Flash\*pepper.exe" set FLASH_CHROMIUM_DETECTED=y
-if exist "!windir!\SysWOW64\Macromed\Flash\*plugin.exe" set FLASH_FIREFOX_DETECTED=y
-if exist "!windir!\System32\Macromed\Flash\*plugin.exe" set FLASH_FIREFOX_DETECTED=y
+if exist "!windir!\SysWOW64\Macromed\Flash\manifest.json" set FLASH_CHROMIUM_DETECTED=y
+if exist "!windir!\System32\Macromed\Flash\manifest.json" set FLASH_CHROMIUM_DETECTED=y
+if exist "!windir!\SysWOW64\Macromed\Flash\manifest.json" set FLASH_FIREFOX_DETECTED=y
+if exist "!windir!\System32\Macromed\Flash\manifest.json" set FLASH_FIREFOX_DETECTED=y
 if !BROWSER_TYPE!==chrome (
 	if !FLASH_CHROMIUM_DETECTED!==n (
 		echo Flash for Chrome could not be found.
