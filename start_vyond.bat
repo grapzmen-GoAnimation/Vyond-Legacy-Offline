@@ -1,7 +1,7 @@
 :: Vyond Legacy Offline Launcher
 :: Author: Fanimation36#1811
 :: License: MIT
-set WRAPPER_VER=1.2.9.3
+set WRAPPER_VER=1.2.9.4
 title Vyond Legacy Offline v%WRAPPER_VER% [Initializing...]
 
 ::::::::::::::::::::
