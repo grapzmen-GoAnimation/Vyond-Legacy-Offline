@@ -11,15 +11,10 @@ const mvu = require("./movie/upload");
 const asu = require("./asset/upload");
 const stl = require("./static/load");
 const stp = require('./static/page');
-const sto = require('./static/pageStudio');
-const sas = require('./static/pageAjaxShare');
-const sti = require('./static/pagelvmold');
-const sco = require('./static/pageOld');
-const szo = require('./static/pageStudioOld');
-const s93 = require('./static/pageTutorial');
 const stc = require('./static/pagecc');
 const scc = require('./static/pageccbro');
 const slv = require('./static/pagelvp');
+const bus = require('./static/pageccbrobusiness');
 const asl = require("./asset/load");
 const asL = require("./asset/list");
 const ast = require("./asset/thmb");
@@ -36,7 +31,7 @@ const sts = require("./starter/save");
 const stt = require("./starter/thmb");
 const url = require("url");
 
-const functions = [mvL, pmc, asl, chl, thl, thL, chs, chu, cht, asL, tsl, chr, ast, mvm, mvl, mvs, mvt, tsv, asu, mvu, stp, sto, sas, sti, sco, szo, s93, stc, scc, slv, stl, sts, stt];
+const functions = [mvL, pmc, asl, chl, thl, thL, chs, chu, cht, asL, tsl, chr, ast, mvm, mvl, mvs, mvt, tsv, asu, mvu, stp, stc, scc, slv, bus, stl, sts, stt];
 
 // Creates an HTTP server
 module.exports = http
