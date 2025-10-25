@@ -65,7 +65,7 @@
 <link rel="dns-prefetch" href="https://d2bm7x1jqouzel.cloudfront.net">
 <link rel="dns-prefetch" href="https://d3v4eglovri8yt.cloudfront.net">
 
-<title>Your Videos on Vyond</title>
+<title>Themelist - Vyond</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -823,7 +823,7 @@ $('.vm-bf-dots a').click(function(e) {
 				<div class="theme-meat">
 					<h3>Stick Figure</h3>
 					<div class="apps">
-						<a class="btn btn-orange pull-left" href="/https://ga.vyond.com/videomaker/full/?trau=stick" data-original-title="" title="">Make a Video</a>
+						<a class="btn btn-orange pull-left" href="/https://ga.vyond.com/videomaker/full/?tray=stick" data-original-title="" title="">Make a Video</a>
 							
 					</div>
 				</div>
@@ -1176,7 +1176,7 @@ var json;
 				const tbl = json[c];
 				const date = tbl.date.substr(0, 10) + ' ' + tbl.date.substr(11);
 				tbody.insertAdjacentHTML('beforeend',
-					'<tr><td><img src="/movie_thumbs/' + tbl.id + '.png"></td><td><div>' + tbl.title.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;") + '</div><div>' + tbl.durationString + '</div></div></td><td><span>' + date + '</span></td><td><a href="/player?movieId=' + tbl.id + '"></a><a href="/https://ga.vyond.com/https://ga.vyond.com/videomaker/full/?movieId=' + tbl.id + '"></a><a href="/movies/' + tbl.id + '.xml" download="' + tbl.title + '"></a></td></tr>');
+					'<tr><td><img src="/movie_thumbs/' + tbl.id + '.png"></td><td><div>' + tbl.title.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;") + '</div><div>' + tbl.durationString + '</div></div></td><td><span>' + date + '</span></td><td><a href="/player?movieId=' + tbl.id + '"></a><a href="/https://ga.vyond.com/videomaker/full/?movieId=' + tbl.id + '"></a><a href="/movies/' + tbl.id + '.xml" download="' + tbl.title + '"></a></td></tr>');
 			}
 		}
 
