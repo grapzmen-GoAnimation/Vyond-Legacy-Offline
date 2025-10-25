@@ -35,6 +35,7 @@ if not exist .git ( goto nogit )
 :yesgit
 echo Vyond Legacy Offline Updater
 echo A project from Fanimation36 adapted by Joseph Animate 2021
+echo Requires Git: https://github.com/git-for-windows/git/releases/download/v2.51.1.windows.1/Git-2.51.1-64-bit.exe
 echo:
 echo Enter 1 to update Vyond Legacy Offline
 echo Enter 0 to close the updater
