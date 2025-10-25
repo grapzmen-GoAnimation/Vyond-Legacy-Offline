@@ -14,6 +14,7 @@ const stp = require('./static/page');
 const stc = require('./static/pagecc');
 const scc = require('./static/pageccbro');
 const slv = require('./static/pagelvp');
+const snf = require('./static/pagenoflash');
 const bus = require('./static/pageccbrobusiness');
 const asl = require("./asset/load");
 const asL = require("./asset/list");
@@ -31,7 +32,7 @@ const sts = require("./starter/save");
 const stt = require("./starter/thmb");
 const url = require("url");
 
-const functions = [mvL, pmc, asl, chl, thl, thL, chs, chu, cht, asL, tsl, chr, ast, mvm, mvl, mvs, mvt, tsv, asu, mvu, stp, stc, scc, slv, bus, stl, sts, stt];
+const functions = [mvL, pmc, asl, chl, thl, thL, chs, chu, cht, asL, tsl, chr, ast, mvm, mvl, mvs, mvt, tsv, asu, mvu, stp, stc, scc, slv, snf, bus, stl, sts, stt];
 
 // Creates an HTTP server
 module.exports = http
