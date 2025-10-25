@@ -93,9 +93,9 @@ if !SKIPCHECKDEPENDS!==n (
 )
 :: Waveforms
 if exist "wrapper\static\info-nowave.json" (
-	echo ^(5^) Waveforms are[92m ON [0m
+	echo ^(5^) Watermark is[92m ON [0m
 ) else ( 
-	echo ^(5^) Waveforms are[91m OFF [0m
+	echo ^(5^) Watermark is[91m OFF [0m
 )
 :: Skip updating
 if !AUTOUPDATE!==y (
